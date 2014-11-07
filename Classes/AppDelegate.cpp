@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "KMainLogicLayer.h"
 #include "KManagerGameLogic.h"
+#include "IAPScene.h"
 
 USING_NS_CC;
 
@@ -50,9 +51,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 	//初始化场景
     // create a scene. it's an autorelease object
 //    CCScene *pScene = KMainLogicLayer::scene(0, 1);
-    CCScene *pScene = KManagerGameLogic::shareKManagerGameLogic()->gameScene4Type(
-    		0,
-    		0);
+    CCScene *pScene = IAPScene::scene(); //KManagerGameLogic::shareKManagerGameLogic()->gameScene4Type( 0, 0);
 
     // run
     pDirector->runWithScene(pScene);

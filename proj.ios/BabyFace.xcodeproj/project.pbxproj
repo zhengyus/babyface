@@ -268,6 +268,9 @@
 		5BAE0DDC1A0C5F17006D48B8 /* soundCard0Btn2Num0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BAE0DC91A0C5F17006D48B8 /* soundCard0Btn2Num0.mp3 */; };
 		5BAE0DDD1A0C5F17006D48B8 /* soundCard0Btn2Num1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BAE0DCA1A0C5F17006D48B8 /* soundCard0Btn2Num1.mp3 */; };
 		5BAE0DDE1A0C5F17006D48B8 /* soundCard0Btn2Num2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BAE0DCB1A0C5F17006D48B8 /* soundCard0Btn2Num2.mp3 */; };
+		5BAE0E0A1A0CA86D006D48B8 /* IAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAE0E091A0CA86D006D48B8 /* IAP.framework */; };
+		5BAE0E0C1A0CAB1F006D48B8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAE0E0B1A0CAB1F006D48B8 /* StoreKit.framework */; };
+		5BAE0E121A0CB0C5006D48B8 /* IAPScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE0E101A0CB0C5006D48B8 /* IAPScene.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -824,6 +827,10 @@
 		5BAE0DC91A0C5F17006D48B8 /* soundCard0Btn2Num0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundCard0Btn2Num0.mp3; sourceTree = "<group>"; };
 		5BAE0DCA1A0C5F17006D48B8 /* soundCard0Btn2Num1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundCard0Btn2Num1.mp3; sourceTree = "<group>"; };
 		5BAE0DCB1A0C5F17006D48B8 /* soundCard0Btn2Num2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundCard0Btn2Num2.mp3; sourceTree = "<group>"; };
+		5BAE0E091A0CA86D006D48B8 /* IAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IAP.framework; path = ../Classes/IAP.framework; sourceTree = "<group>"; };
+		5BAE0E0B1A0CAB1F006D48B8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5BAE0E101A0CB0C5006D48B8 /* IAPScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IAPScene.cpp; path = ../Classes/IAPScene.cpp; sourceTree = "<group>"; };
+		5BAE0E111A0CB0C5006D48B8 /* IAPScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAPScene.h; path = ../Classes/IAPScene.h; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -846,7 +853,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAE0E0C1A0CAB1F006D48B8 /* StoreKit.framework in Frameworks */,
 				15A3DA6A1682F886002FB0C5 /* libcocos2dx.a in Frameworks */,
+				5BAE0E0A1A0CA86D006D48B8 /* IAP.framework in Frameworks */,
 				1ACB3244164770DE00914215 /* libcurl.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -1357,6 +1366,9 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5BAE0E101A0CB0C5006D48B8 /* IAPScene.cpp */,
+				5BAE0E111A0CB0C5006D48B8 /* IAPScene.h */,
+				5BAE0E091A0CA86D006D48B8 /* IAP.framework */,
 				5BAE0D991A0C5E78006D48B8 /* Define.h */,
 				5BAE0D9A1A0C5E78006D48B8 /* K4IOSAudioEngine.h */,
 				5BAE0D9B1A0C5E78006D48B8 /* K4IOSAudioEngine.mm */,
@@ -1647,6 +1659,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5BAE0E0B1A0CAB1F006D48B8 /* StoreKit.framework */,
 				1ACB3243164770DE00914215 /* libcurl.a */,
 				BF170DB212928DE900B8313A /* libxml2.dylib */,
 				BF170DB412928DE900B8313A /* libz.dylib */,
@@ -2145,6 +2158,7 @@
 				5BAE0DB71A0C5E78006D48B8 /* KTouchPoint.cpp in Sources */,
 				375BD4C61868411B0024609E /* TriggerObj.cpp in Sources */,
 				375BD4C31868411B0024609E /* ObjectFactory.cpp in Sources */,
+				5BAE0E121A0CB0C5006D48B8 /* IAPScene.cpp in Sources */,
 				15A3D90D1682F7D5002FB0C5 /* b2Math.cpp in Sources */,
 				15A3D90E1682F7D5002FB0C5 /* b2Settings.cpp in Sources */,
 				15A3D90F1682F7D5002FB0C5 /* b2StackAllocator.cpp in Sources */,
@@ -2379,6 +2393,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: yu zhengyu (R3VUN5H46V)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/huxf/workspace/cocos2d-x-2.2.3/projects/babyface/Classes",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2412,13 +2431,14 @@
 					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
 				);
 				OTHER_CFLAGS = "-O2";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = BabyFace;
 				PROVISIONING_PROFILE = "45b84c7e-963a-49c4-9c36-350e3986fbfb";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv6 armv7 i386";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -2429,6 +2449,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: yu zhengyu (R3VUN5H46V)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/huxf/workspace/cocos2d-x-2.2.3/projects/babyface/Classes",
+				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2459,6 +2484,7 @@
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = BabyFace;
 				PROVISIONING_PROFILE = "45b84c7e-963a-49c4-9c36-350e3986fbfb";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2466,6 +2492,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
